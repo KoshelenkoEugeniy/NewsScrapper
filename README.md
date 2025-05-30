@@ -10,17 +10,17 @@ A Python-based prototype that scrapes news articles from URLs, summarizes them u
 - User-friendly desktop GUI for end-to-end interaction
 
 ## Project Structure
-
-│
-├── main.py # Entry point for GUI
-├── ui.py # Tkinter-based UI
-├── controller.py # Bridges UI and logic
-├── logic/scraper.py # Handles article extraction with Selenium + BeautifulSoup
-├── logic/genai.py # Summarizes article and extracts topics using OpenAI
-├── logic/semantic_store.py # Indexes and searches summaries with FAISS
-├── .env # API key
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+    
+├── main.py                  # Entry point for GUI  
+├── ui.py                    # Tkinter-based UI  
+├── controller.py            # Bridges UI and logic  
+├── .env                     # API key  
+├── requirements.txt         # Python dependencies  
+├── README.md                # Project documentation  
+└── logic/  
+    ├── scraper.py           # Handles article extraction with Selenium + BeautifulSoup  
+    ├── genai.py             # Summarizes article and extracts topics using OpenAI  
+    └── semantic_store.py    # Indexes and searches summaries with FAISS  
 
 ## Requirements
 
@@ -49,19 +49,19 @@ A Python-based prototype that scrapes news articles from URLs, summarizes them u
 
 Validation Results And Errors:
 
-![Screenshot](images/Img_InvalidURL.png)
-![Screenshot](images/Img_NoURL.png)
-![Screenshot](images/Img_NoTextToSearch.png)
-![Screenshot](images/Img_NoSavedArticles.png)
-![Screenshot](images/Img_ParseError.png)
+![Screenshot](PythonProject/images/Img_InvalidURL.png)
+![Screenshot](PythonProject/images/Img_NoURL.png)
+![Screenshot](PythonProject/images/Img_NoTextToSearch.png)
+![Screenshot](PythonProject/images/Img_NoSavedArticles.png)
+![Screenshot](PythonProject/images/Img_ParseError.png)
 
 Article Summary:
 
-![Screenshot](images/Img_Summary.png)
+![Screenshot](PythonProject/images/Img_Summary.png)
 
 Search Result:
 
-![Screenshot](images/Img_SearchResult.png)
+![Screenshot](PythonProject/images/Img_SearchResult.png)
 
 ## 🛠 Technologies Used
 
